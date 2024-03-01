@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="email">Enderço de Email:</label>
+        <input type="email" id="email" name="email" required placeholder="seuemail@example.com">
+        <input type="submit"><br>
+        <label for="website">Website:</label>
+        <input type="url" id="website" name="website" required placeholder="https://www.example.com" pattern="https?://.*"><br>
+        <label for="phone">telefone:</label>
+        <input type="tel" id="phone" name="phone" required placeholder="(xx) xxxxx - xxxx" pattern="\(\d{2}\) \d{5}-\d{4}"><br>
+        <label for="quant">Quantidade:</label>
+        <input type="number" id="quantity" name="quant" min="1" max="10" step="1" value="1" required><br>
+        <label for="dob">Data de nascimento</label>
+        <input type="date" id="dob" name="dob" min="1999-01-01" max="2024-29-02">
+        <label for="color">EScolha uma cor:</label>
+        <input type="color" id="color" name="color" value="red"><br> 
+        <label for="volume">Volume:</label>
+        <input type="rabge" id="volume" name="volume" min="0" max="100"><br>
+        <label for="brightness">Brilho:</label>
+        <input type="range" id="brightness" name="brightness" min="0" max="100" step="10" value="50" list="tickmarks"><br>
+        <label for="comments">Comentários:</label><br>
+        <textarea id="comments" name="comments" cols=40 rows=4 placeholder="Exemplo" required maxlength="200"></textarea><br>
+     
+    </form>
+    <form oninput="result.value=parseInt(a.value) + parseInt(b.value)">
+        <label for="a">Número A:</label>
+        <input type="number" id="a" name="a" value="0">
+        +
+        <label for="b">número B:</label>
+        <input type="number" id="b" name="b" value="0">
+        =
+        <output name="result"></output>
+    </form>
+    <form>
+        <fieldset>
+            <legend>Informações Pessoais</legend>
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name">
+            <br>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email">
+        </fieldset>
+    </form>
+</body>
+</html>
