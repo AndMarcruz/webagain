@@ -6,9 +6,9 @@
     <title>Document</title>
 </head>
 <body>
-   
+    <h1>Cadastro de aluno</h1>
         <form>
-        <fieldset><h1>Cadastro de aluno</h1></td>
+        <fieldset><legend>Dados Pessoais</legend>
         <table>
         <tr>
             <td >Nome:</td>
@@ -34,7 +34,14 @@
             <td>Data de Nascimento:</td>
             <td><input type="date"></td>
         </tr>
-        <tr>
+        </table>
+        </fieldset>
+        
+        </form>
+        <form>
+        <fieldset><legend>Endereço</legend>
+        <table>
+       <tr>
             <td>Endereço:</td>
             <td><input type="text"></td>
         </tr>
@@ -63,12 +70,12 @@
                 </select>
             </td>
         </tr>
-        <tr>
-            <td><input type="submit" value="cadastrar"></td>
-        </tr>
-        </form>
         </table> 
-        </fieldset>
+        </fieldset>   
+       
+        </form>
+        
+        <input type="submit" value="cadastrar">
    
 </body>
 </html>
