@@ -1,0 +1,33 @@
+p{
+    font-family: 'Arial';
+    font-size: 45px;
+    color:black
+}
+.destaque{
+    font-family: 'Arial';
+    font-size: 6px;
+    color:gray
+}
+header{
+    background-color:#333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+section{
+    padding: 20px;
+}
+footer{
+    background-color: green;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+    h2 + p{
+        font-variant: small-caps;
+        background-color: gray;
+    }
+
+article > h1 {
+    color: blue;
+}
